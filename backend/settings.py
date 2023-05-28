@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'djoser',
     'entity',
     'corsheaders',
+    'account',
 ]
 
 
@@ -76,6 +77,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'backend.wsgi.application'
+
+AUTH_USER_MODEL = "account.Account"
 
 
 # Database
